@@ -74,7 +74,7 @@ returns the evaluation of the expression represented by the given expression tre
 releases all the memory allocated for the given tree
 
 *** 
-# stack implementation (stack.s)
+# stack implementation (stack.c)
 
 ## Associated Structs
 
