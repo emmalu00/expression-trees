@@ -10,8 +10,8 @@ The program must be compiled through the command line with the following stateme
 
 `make`
 
-This will produce the executable **_project4.c_**
+This will produce the executable **_expressiontrees.c_**
 
 The program must then be run through the command line with the following statement:
 
-`./project4`
+`./expressiontrees`
