@@ -1,12 +1,12 @@
 CC = gcc
 CFLAGS = -g -Wall
-EXE = project4
+EXE = expressiontrees
 HEADERS = types.h tree.h stack.h
-CODE = tree.c stack.c project4.c
+CODE = tree.c stack.c expressiontrees.c
 
 OBJECTS = $(CODE:.c=.o)
 
-project4: $(OBJECTS) $(HEADERS)
+expressiontrees: $(OBJECTS) $(HEADERS)
 	$(CC) $(CFLAGS) $(OBJECTS) -o $(EXE)
 
 clean:

@@ -1,6 +1,6 @@
 /* 
  * Author: Emma Lucas
- * project4.c
+ * expressiontrees.c
  * 
  * This program gets a postfix expression from the user and converts it 
  * to an infix or prefix expression based on the user's preference. The
@@ -23,18 +23,6 @@ int main()
     printf("Enter postfix expression: ");
     fgets(expression, 100, stdin);
     expression[strcspn(expression, "\n")] = '\0';
-    /*//remove spaces
-    int nospaces = 0;
-    for (int i = 0; expression[i] != '\0'; i++)
-    {
-        if (expression[i] != ' ')
-        {
-            expression[nospaces] = expression[i];
-            nospaces++;
-        }
-    }
-    expression[nospaces] = '\0';
-    */
     //construct an expression tree
     STACK* trees = init_stack();
     char* input = strtok(expression, " ");
